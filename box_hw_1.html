@@ -4,33 +4,53 @@
         <meta charset="UTF-8">
         <title>homework box1</title>
         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
             .father {
                 width: 900px;
                 background: #e0dfdf;
+                margin: 0 auto;
+                padding: 5px;
             }
 
-            .box {
-                width: 90%;
-                height: 250px;
+            .header {
+                width: 99%;
+                height: 140px;
                 background: #d9f4ff;
+                border-radius: 10px;
                 color: black;
                 text-align: center;
+                margin: 0 auto;
             }
 
-            .yellow-hue {
-                background: #dddb44;
+            .content {
+                width: 100%;
+                height: 250px;
+                background: #e0dfdf;
                 color: black;
-            }
-
-            .purple-hue {
-                background: #c829c8;
-                color: #000000;
-            }
-
-            .flex {
+                text-align: center;
                 display: flex;
                 justify-content: center;
+            }
+
+            .B {
+                width: 74%;
+                height: 245px;
+                background: #dddb44;
+                border-radius: 10px;
+                margin: 5px;
+            }
+
+            .C {
+                width: 24%;
+                background: #c829c8;
+                height: 245px;
+                border-radius: 10px;
+                margin: 5px;
             }
 
 
@@ -38,14 +58,12 @@
 
     </head>
     <body>
-
-        <div class="father flex">
-            <div class="box">A</div>
-        </div>
-
-        <div class="father flex">
-            <div class="box yellow-hue">B</div>
-            <div class="box purple-hue">C</div>
+        <div class="father">
+            <div class="header">A</div>
+            <div class="content">
+                <div class="B">B</div>
+                <div class="C">C</div>
+            </div>
         </div>
 
 
